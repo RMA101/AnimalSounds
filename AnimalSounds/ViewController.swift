@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var animalSoundLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func catButtonTapped(_ sender: Any) {
+        animalSoundLabel.text = "Meow!"
+    }
+    
+    @IBAction func dogButtonTapped(_ sender: Any) {
+        animalSoundLabel.text = "Woof!"
+    }
 
+    @IBAction func cowButtonTapped(_ sender: Any) {
+        animalSoundLabel.text = "Moo!"
+    }
 
 }
 
